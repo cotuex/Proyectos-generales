@@ -22,7 +22,7 @@ try:
 	nums=set(archivo["serie de fibonacci"])
 	num_actual=int(archivo["num_actual"])
 except:
-	open(nombreArchivoJson,"x").write(json.dumps({"presicion":getcontext().prec,"serie de fibonacci":[final[-2],final[-1]],"num_actual":num_actual,"numero de oro":str(numeroOro)},indent=5))
+	open(nombreArchivoJson,"x").write(json.dumps({"presicion":getcontext().prec,"serie de fibonacci":[0,0],"num_actual":0,"numero de oro":"0"},indent=5))
 	getcontext().prec = archivo["presicion"]
 	nums=set(archivo["serie de fibonacci"])
 	num_actual=int(archivo["num_actual"])
